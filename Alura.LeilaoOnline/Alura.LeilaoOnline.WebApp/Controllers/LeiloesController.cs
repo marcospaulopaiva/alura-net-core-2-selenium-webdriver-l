@@ -16,7 +16,7 @@ namespace Alura.LeilaoOnline.WebApp.Controllers
     public class LeiloesController : Controller
     {
         private readonly IRepositorio<Leilao> _repo;
-        private readonly IHostingEnvironment _env;
+        private readonly IWebHostEnvironment _env;
 
         private string TentaGravarImagemDestaqueERetornaSeuNome(IFormFile upload)
         {
@@ -34,7 +34,7 @@ namespace Alura.LeilaoOnline.WebApp.Controllers
             return $"/images/{upload.FileName}";
         }
 
-        public LeiloesController(IRepositorio<Leilao> repositorio, IHostingEnvironment environment)
+        public LeiloesController(IRepositorio<Leilao> repositorio, IWebHostEnvironment environment)
         {
             _repo = repositorio;
             _env = environment;
