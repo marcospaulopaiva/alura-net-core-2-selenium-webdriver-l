@@ -1,8 +1,5 @@
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
-using System.Reflection;
-using Alura.LeilaoOnline.Selenium.Helpers;
 using Alura.LeilaoOnline.Selenium.Fixtures;
+using OpenQA.Selenium;
 using Xunit;
 
 namespace Alura.LeilaoOnline.Selenium.Testes
